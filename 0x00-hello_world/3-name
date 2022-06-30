@@ -1,2 +1,2 @@
-3-name
+#!/bin/bash
 gcc $CFILE -o cisfun
