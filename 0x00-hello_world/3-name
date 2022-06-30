@@ -1,0 +1,2 @@
+3-name
+gcc $CFILE -o cisfun
