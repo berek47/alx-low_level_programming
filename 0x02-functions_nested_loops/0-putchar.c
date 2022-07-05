@@ -1,19 +1,19 @@
-#include "main.c"
+#include "main.h"
 /**
- * main - entry block
- * @void: no argument
- * Return: 0
- **/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char a[] = "_putchar";
+	char *sh = "Holberton";
 
-	int i;
-
-	for (i = 0; i < 8; i++)
+	while (*sh)
 	{
-		_putchar(a[i]);
+		_putchar(*sh);
+		sh++;
 	}
 	_putchar('\n');
+
 	return (0);
 }
