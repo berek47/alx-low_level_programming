@@ -33,10 +33,3 @@ int _atoi(char *s)
 	}
 	return (oi * pn);
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-St
