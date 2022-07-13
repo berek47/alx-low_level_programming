@@ -1,17 +1,25 @@
 #include "main.h"
-
 /**
- * _memset - Entry point
- * @s: pointed destination
- * @b: constant byte
- * @n: bytes
- * Return: Always 0 (Success)
+ * _strcat - a function that appends src to dest
+ *
+ * @dest: destination string
+ * @src: source string
+ *
+ * Return: the appended string
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strcat(char *dest, char *src)
 {
-	unsigned int i;
+	int a = 0;
+	int b = 0;
 
-	for (i = 0; i < n; i++)
-		s[i] = b;
-	return (s);
+	while (dest[a] != '\0')
+		a++;
+	while (src[b] != '\0')
+	{
+		dest[a] = src[b];
+		a++;
+		b++;
+	}
+	dest[a] = '\0';
+	return (dest);
 }
