@@ -75,38 +75,38 @@ int check_for_digits(char **av)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
-OBOBOB			if (av[i][j] < '0' || av[i][j] > '9')
+			if (av[i][j] < '0' || av[i][j] > '9')
 				return (1);
-OB		}
+		}
 	}
-OB	return (0);
+	return (0);
 }
-OB
-OB/**
-OB *  * init - initializes a string
+
+/**
+ *  * init - initializes a string
  *   * @str: sting to initialize
-OB *    * @l: length of strinf
+ *    * @l: length of strinf
  *     *
-OB *      * Return: void
+ *      * Return: void
  **/
-OBvoid init(char *str, int l)
-OB{
+void init(char *str, int l)
+{
 	int i;
-OB
+
 	for (i = 0; i < l; i++)
 		str[i] = '0';
 	str[i] = '\0';
 }
-OB
+
 /**
-OBOBOB *  * main - multiply two numbers
+ *  * main - multiply two numbers
  *   * @argc: number of arguments
  *    * @argv: argument vector
-OB *     *
+ *     *
  *      * Return: zero, or exit status of 98 if failure
  **/
 int main(int argc, char *argv[])
-OBOB{
+{
 	int l1, l2, ln, ti, i;
 	char *a;
 	char *t;
